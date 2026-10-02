@@ -10,60 +10,73 @@ from dotenv import load_dotenv
 
 load_dotenv(Path(__file__).resolve().parent / ".env")
 
-# SilentVision traction: rare animals, human-body oddities, and space wow
-# facts outperform motivation and finance by a wide margin.
 TOPICS = [
     {
-        "niche": "animal_facts",
+        "niche": "food_science",
         "prompt_hint": (
-            "one surprising, verifiable fact about a common, well-known animal "
-            "(dog, cat, elephant, shark, lion, bird, octopus, bear, horse, etc). "
-            "The animal should be instantly recognizable, but the fact must be "
-            "genuinely surprising -- a hidden ability, survival trick, or "
-            "biological quirk most people don't know."
+            "one surprising, verifiable fact about everyday food or cooking "
+            "science -- why something happens when you cook, freeze, or eat "
+            "a common food (bread, chocolate, coffee, fruit, spices, etc). "
+            "Make it feel like a kitchen secret most people never learned."
         ),
         "visual_keywords": [
-            "dog closeup",
-            "cat closeup",
-            "wildlife nature",
-            "ocean animal",
-            "bird flying",
+            "cooking closeup",
+            "food preparation",
+            "kitchen closeup",
+            "fresh ingredients",
+            "coffee pour",
         ],
-        "hashtags": "#animalfacts #curiosity #education #facts #shorts",
+        "hashtags": "#foodfacts #curiosity #wow #facts #shorts",
     },
-     {
-        "niche": "pets_and_farm",
+    {
+        "niche": "nature_weather",
         "prompt_hint": (
-            "one surprising, verifiable fact about a common pet or farm "
-            "animal (dog, cat, horse, cow, chicken, rabbit, etc). The animal "
-            "should be instantly recognizable, but the fact must be "
-            "genuinely surprising."
+            "one surprising, verifiable fact about weather, nature, or the "
+            "outdoors -- clouds, storms, oceans, forests, rivers, or seasons. "
+            "Something people see all the time but never understood why it "
+            "happens."
         ),
         "visual_keywords": [
-            "dog closeup",
-            "cat closeup",
-            "horse farm",
-            "farm animals",
-            "rabbit closeup",
+            "storm clouds",
+            "ocean waves",
+            "forest nature",
+            "rain closeup",
+            "sunset landscape",
         ],
-        "hashtags": "#petfacts #curiosity #education #facts #shorts",
+        "hashtags": "#naturefacts #curiosity #wow #facts #shorts",
+    },
+    {
+        "niche": "everyday_objects",
+        "prompt_hint": (
+            "one surprising, verifiable fact about a common everyday object "
+            "or material -- glass, metal, paper, plastic, fabric, or a "
+            "household item. Something that sounds impossible but is "
+            "scientifically true."
+        ),
+        "visual_keywords": [
+            "glass closeup",
+            "metal texture",
+            "fabric closeup",
+            "paper texture",
+            "household items",
+        ],
+        "hashtags": "#didyouknow #curiosity #wow #facts #shorts",
     },
 ]
 
 
 VIDEOS_PER_DAY = 3
 
-# Uploads and reports must target this channel. The Aug 30 re-auth
-# logged into Facelessclipper instead; refuse any other mine=true channel.
+# Uploads and reports must target this channel.
 SILENTVISION_CHANNEL_ID = "UCOuRLbO73RGZktBUP0zoEjg"
 SILENTVISION_CHANNEL_TITLE = "One Min WOW"
 
 # One Short per window so uploads are spaced, not dumped at once.
-# Times are UTC. Nigeria is UTC+1, so these land at 8am / 3pm / 9pm.
+# Times are UTC (US Eastern/EDT: 8am / 3pm / 9pm).
 POST_WINDOWS = (
-    {"name": "morning", "utc_hour": 7},
-    {"name": "afternoon", "utc_hour": 14},
-    {"name": "night", "utc_hour": 20},
+    {"name": "morning", "utc_hour": 12},
+    {"name": "afternoon", "utc_hour": 19},
+    {"name": "night", "utc_hour": 1},
 )
 SLOT_NAMES = {window["name"]: index for index, window in enumerate(POST_WINDOWS)}
 
@@ -71,7 +84,6 @@ SLOT_NAMES = {window["name"]: index for index, window in enumerate(POST_WINDOWS)
 def slot_for_now(name: str | None = None) -> int:
     """
     Map a window name or the current UTC hour to slot 0, 1, or 2.
-    Morning < 11:00 UTC, afternoon < 17:00 UTC, otherwise night.
     """
     if name:
         key = name.strip().lower()
@@ -83,11 +95,13 @@ def slot_for_now(name: str | None = None) -> int:
     from datetime import datetime, timezone
 
     hour = datetime.now(timezone.utc).hour
-    if hour < 11:
+    if hour < 1:
+        return 2
+    if hour < 12:
+        return 2
+    if hour < 19:
         return 0
-    if hour < 17:
-        return 1
-    return 2
+    return 1
 
 
 def pick_topic_for_slot(slot: int = 0):
@@ -110,7 +124,6 @@ VIDEO_WIDTH = 1080
 VIDEO_HEIGHT = 1920  # vertical, for Shorts
 TARGET_DURATION_SECONDS = 45
 MIN_DURATION_SECONDS = 40
-# 55s is TTS jitter only. GuyNeural can land 1-3s past 52 on a 130-word read.
 MAX_DURATION_SECONDS = 55
 # Spoken at the end of every Short. Captions follow the voice.
 END_CTA = "Follow this channel if you enjoy this kind of stuff."
