@@ -14,42 +14,57 @@ load_dotenv(Path(__file__).resolve().parent / ".env")
 # facts outperform motivation and finance by a wide margin.
 TOPICS = [
     {
-        "niche": "animal_facts",
+        "niche": "food_science",
         "prompt_hint": (
-            "one surprising, verifiable fact about a common, well-known animal "
-            "(dog, cat, elephant, shark, lion, bird, octopus, bear, horse, etc). "
-            "The animal should be instantly recognizable, but the fact must be "
-            "genuinely surprising -- a hidden ability, survival trick, or "
-            "biological quirk most people don't know."
+            "one surprising, verifiable fact about everyday food or cooking "
+            "science -- why something happens when you cook, freeze, or eat "
+            "a common food (bread, chocolate, coffee, fruit, spices, etc). "
+            "Make it feel like a kitchen secret most people never learned."
         ),
         "visual_keywords": [
-            "dog closeup",
-            "cat closeup",
-            "wildlife nature",
-            "ocean animal",
-            "bird flying",
+            "cooking closeup",
+            "food preparation",
+            "kitchen closeup",
+            "fresh ingredients",
+            "coffee pour",
         ],
-        "hashtags": "#animalfacts #curiosity #education #facts #shorts",
+        "hashtags": "#foodfacts #curiosity #wow #facts #shorts",
     },
-     {
-        "niche": "pets_and_farm",
+    {
+        "niche": "nature_weather",
         "prompt_hint": (
-            "one surprising, verifiable fact about a common pet or farm "
-            "animal (dog, cat, horse, cow, chicken, rabbit, etc). The animal "
-            "should be instantly recognizable, but the fact must be "
-            "genuinely surprising."
+            "one surprising, verifiable fact about weather, nature, or the "
+            "outdoors -- clouds, storms, oceans, forests, rivers, or seasons. "
+            "Something people see all the time but never understood why it "
+            "happens."
         ),
         "visual_keywords": [
-            "dog closeup",
-            "cat closeup",
-            "horse farm",
-            "farm animals",
-            "rabbit closeup",
+            "storm clouds",
+            "ocean waves",
+            "forest nature",
+            "rain closeup",
+            "sunset landscape",
         ],
-        "hashtags": "#petfacts #curiosity #education #facts #shorts",
+        "hashtags": "#naturefacts #curiosity #wow #facts #shorts",
+    },
+    {
+        "niche": "everyday_objects",
+        "prompt_hint": (
+            "one surprising, verifiable fact about a common everyday object "
+            "or material -- glass, metal, paper, plastic, fabric, or a "
+            "household item. Something that sounds impossible but is "
+            "scientifically true."
+        ),
+        "visual_keywords": [
+            "glass closeup",
+            "metal texture",
+            "fabric closeup",
+            "paper texture",
+            "household items",
+        ],
+        "hashtags": "#didyouknow #curiosity #wow #facts #shorts",
     },
 ]
-
 
 VIDEOS_PER_DAY = 3
 
