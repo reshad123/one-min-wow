@@ -100,9 +100,9 @@ def _build_caption_clips(word_timings: list, video_duration: float):
             TextClip(
                 text=text,
                 font_size=FONT_SIZE,
-                color="black",
+                color="#F66C02",
                 font=CAPTION_FONT,
-                stroke_color="white",
+                stroke_color="#1D242D",
                 stroke_width=3,
                 method="caption",
                 size=(int(VIDEO_WIDTH * 0.75), None),
@@ -124,9 +124,9 @@ def _title_card(title: str, hold: float):
         TextClip(
             text=text,
             font_size=46,
-            color="black",
+            color="#F66C02",
             font=CAPTION_FONT,
-            stroke_color="white",
+            stroke_color="#1D242D",
             stroke_width=3,
             method="caption",
             size=(int(VIDEO_WIDTH * 0.9), None),
