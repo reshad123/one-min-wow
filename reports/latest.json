@@ -1,0 +1,194 @@
+{
+  "generated_at": "2026-09-30T14:28:28.016060+00:00",
+  "period": {
+    "week_start": "2026-09-23",
+    "month_start": "2026-09-02",
+    "end": "2026-09-29"
+  },
+  "channel": {
+    "id": "UC6JlX3lps3k-ygVvNwULyKA",
+    "title": "How Come?",
+    "subscribers": 3,
+    "hidden_subscribers": false,
+    "total_views": 2643,
+    "video_count": 22
+  },
+  "last_7_days": {
+    "views": 6,
+    "watch_minutes": 0,
+    "subs_gained": 0,
+    "subs_lost": 0,
+    "likes": 0,
+    "comments": 0,
+    "shares": 0,
+    "avg_view_seconds": 6,
+    "avg_view_percent": 13.9
+  },
+  "last_28_days": {
+    "views": 2645,
+    "watch_minutes": 418,
+    "subs_gained": 4,
+    "subs_lost": 1
+  },
+  "top_videos": [
+    {
+      "id": "nUJ33-RO6kE",
+      "title": "How Come a Shrimp Snaps a Bubble Hotter Than Sun?",
+      "views": 3,
+      "watch_minutes": 0,
+      "avg_view_percent": 13.2,
+      "likes": 0,
+      "url": "https://www.youtube.com/watch?v=nUJ33-RO6kE"
+    },
+    {
+      "id": "DybcgfGOgH8",
+      "title": "How Come You Get Goosebumps When You\u2019re Scared?",
+      "views": 2,
+      "watch_minutes": 0,
+      "avg_view_percent": 15.3,
+      "likes": 0,
+      "url": "https://www.youtube.com/watch?v=DybcgfGOgH8"
+    },
+    {
+      "id": "8C0Z00KtSCs",
+      "title": "How Come Your Nose Chooses a Side to Breathe?",
+      "views": 1,
+      "watch_minutes": 0,
+      "avg_view_percent": 0.0,
+      "likes": 0,
+      "url": "https://www.youtube.com/watch?v=8C0Z00KtSCs"
+    },
+    {
+      "id": "LCi6tMJWyig",
+      "title": "How Come Tuatara Has a Third Eye?",
+      "views": 0,
+      "watch_minutes": 0,
+      "avg_view_percent": 0.0,
+      "likes": 0,
+      "url": "https://www.youtube.com/watch?v=LCi6tMJWyig"
+    }
+  ],
+  "analytics_error": null,
+  "recent_uploads": [
+    {
+      "id": "WrUn5_seCS0",
+      "title": "How Come Your Skin Forms Tiny Armor When Cold?",
+      "published_at": "2026-09-30T14:22:09Z",
+      "duration_seconds": 48,
+      "views": 1,
+      "likes": 0,
+      "comments": 0,
+      "url": "https://www.youtube.com/watch?v=WrUn5_seCS0"
+    },
+    {
+      "id": "LCi6tMJWyig",
+      "title": "How Come Tuatara Has a Third Eye?",
+      "published_at": "2026-09-22T05:50:07Z",
+      "duration_seconds": 52,
+      "views": 1,
+      "likes": 0,
+      "comments": 0,
+      "url": "https://www.youtube.com/watch?v=LCi6tMJWyig"
+    },
+    {
+      "id": "DybcgfGOgH8",
+      "title": "How Come You Get Goosebumps When You\u2019re Scared?",
+      "published_at": "2026-09-21T22:27:39Z",
+      "duration_seconds": 45,
+      "views": 4,
+      "likes": 0,
+      "comments": 0,
+      "url": "https://www.youtube.com/watch?v=DybcgfGOgH8"
+    },
+    {
+      "id": "nUJ33-RO6kE",
+      "title": "How Come a Shrimp Snaps a Bubble Hotter Than Sun?",
+      "published_at": "2026-09-21T18:02:32Z",
+      "duration_seconds": 47,
+      "views": 10,
+      "likes": 0,
+      "comments": 0,
+      "url": "https://www.youtube.com/watch?v=nUJ33-RO6kE"
+    },
+    {
+      "id": "z1qWeF579xY",
+      "title": "How Come a Day on Venus Is Longer Than Its Year?",
+      "published_at": "2026-09-21T05:51:50Z",
+      "duration_seconds": 47,
+      "views": 4,
+      "likes": 0,
+      "comments": 0,
+      "url": "https://www.youtube.com/watch?v=z1qWeF579xY"
+    },
+    {
+      "id": "eHC_CwsbhpM",
+      "title": "How Come Tuatara Have a Third Eye?",
+      "published_at": "2026-09-20T21:12:42Z",
+      "duration_seconds": 47,
+      "views": 3,
+      "likes": 0,
+      "comments": 0,
+      "url": "https://www.youtube.com/watch?v=eHC_CwsbhpM"
+    },
+    {
+      "id": "K1CqNGbsN2Y",
+      "title": "How Come Venus Spins Backwards?",
+      "published_at": "2026-09-20T15:41:52Z",
+      "duration_seconds": 49,
+      "views": 3,
+      "likes": 0,
+      "comments": 0,
+      "url": "https://www.youtube.com/watch?v=K1CqNGbsN2Y"
+    },
+    {
+      "id": "-B63lgYKpsI",
+      "title": "How Come Your Stomach Regenerates Every Few Days?",
+      "published_at": "2026-09-20T05:41:58Z",
+      "duration_seconds": 46,
+      "views": 1,
+      "likes": 0,
+      "comments": 0,
+      "url": "https://www.youtube.com/watch?v=-B63lgYKpsI"
+    },
+    {
+      "id": "z7V3m6ew2aE",
+      "title": "How Come Your Tailbone Hurts When You Sit?",
+      "published_at": "2026-09-19T15:35:18Z",
+      "duration_seconds": 43,
+      "views": 25,
+      "likes": 0,
+      "comments": 0,
+      "url": "https://www.youtube.com/watch?v=z7V3m6ew2aE"
+    },
+    {
+      "id": "yyf7kHDCYqY",
+      "title": "How Come Yeti Crab Farms Bacteria on Its Claws?",
+      "published_at": "2026-09-19T05:27:21Z",
+      "duration_seconds": 47,
+      "views": 19,
+      "likes": 0,
+      "comments": 0,
+      "url": "https://www.youtube.com/watch?v=yyf7kHDCYqY"
+    },
+    {
+      "id": "W6VTF4SUrD0",
+      "title": "How Come Your Heart Beats Without Your Brain?",
+      "published_at": "2026-09-18T21:27:16Z",
+      "duration_seconds": 47,
+      "views": 10,
+      "likes": 0,
+      "comments": 0,
+      "url": "https://www.youtube.com/watch?v=W6VTF4SUrD0"
+    },
+    {
+      "id": "2omUJk0-SPw",
+      "title": "How Come the Solenodon Has a Venomous Bite?",
+      "published_at": "2026-09-18T16:03:54Z",
+      "duration_seconds": 46,
+      "views": 2,
+      "likes": 0,
+      "comments": 0,
+      "url": "https://www.youtube.com/watch?v=2omUJk0-SPw"
+    }
+  ]
+}
